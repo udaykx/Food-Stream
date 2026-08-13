@@ -13,4 +13,6 @@ async function registerUser(req, res) {
             message:"User already exists"
         })
     }
+
+    const hashedPassword = 
 }
