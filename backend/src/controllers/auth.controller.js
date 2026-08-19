@@ -1,6 +1,8 @@
 const userModel = require('../models/user.model')
+const foodPartnerModel = require("../models/foodpartner.model")
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
 
 async function registerUser(req, res) {
     const { fullName, email, password } = req.body;
@@ -81,6 +83,9 @@ async function logoutUser(req, res) {
     });
 }
 
+async function registerFoodParner(req, res) {
+    const { name, email, password } = req.body;
+}
 module.exports = {
     registerUser,
     loginUser,
